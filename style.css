@@ -1,0 +1,108 @@
+body {
+  background-color: darkgrey;
+}
+.menubar {
+  background-color: thistle;
+  height: 25px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 25px;
+  position: sticky;
+  top: 10px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 800;
+}
+
+a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: black;
+}
+#menubar {
+  margin-left: 800px;
+  text-decoration: none;
+}
+#container {
+  width: 250px;
+  height: 160px;
+  position: relative;
+}
+#icon {
+  margin-left: 259px;
+  margin-bottom: 3px;
+}
+button {
+  width: 10px;
+}
+
+footer {
+  background-color: blanchedalmond;
+  text-align: center;
+  position: sticky;
+  bottom: 0px;
+}
+
+button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+/* ---------------transfomer ---------------*/
+.second {
+  display: flex;
+}
+.box {
+  background: brown;
+  border: 2px solid black;
+  height: 50px;
+  width: 50px;
+  padding: 25px 25px;
+  align-items: center;
+  transition: all 1s ease-in-out;
+}
+
+/* -----------------box----------- */
+.flip-box {
+  background-color: transparent;
+  width: 200px;
+  height: 150px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  border: none;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border: none;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  background-color: dodgerblue;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
